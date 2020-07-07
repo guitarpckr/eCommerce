@@ -1,7 +1,11 @@
 package com.tts.eCommerce.repository;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProductRepository extends CrudRepository<T, ID> {
+import com.tts.eCommerce.model.Product;
 
+@Repository
+public interface ProductRepository extends CrudRepository<Product, Long> {
+	public Product findByProduct(String product);
 }
