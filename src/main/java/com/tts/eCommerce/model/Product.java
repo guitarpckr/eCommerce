@@ -33,6 +33,7 @@ public class Product {
 	@NotBlank(message = "Product brand cannot be blank") //somebody made it, right?
 	private String brand;
 	
+	private String category;
 	
 	private String description;
 	
