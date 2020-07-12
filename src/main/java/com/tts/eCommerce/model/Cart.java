@@ -10,11 +10,21 @@ import javax.persistence.Id;
 
 public class Cart {
 	
-	private List<HashMap<Product, Integer>> lineItems;
+	public List<HashMap<Product, Integer>> lineItems;
 	private Double subTotal;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "cart_id")
 	private Long id;
+
+	public void setLineItems(List<HashMap<Product, Integer>> cartItems) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List<HashMap<Product, Integer>> getLineItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

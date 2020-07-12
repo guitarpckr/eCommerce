@@ -2,6 +2,7 @@ package com.tts.eCommerce.model;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -180,6 +181,11 @@ public class User {
 		return "User [id=" + id + ", email=" + email + ", username=" + username + ", password=" + password
 				+ ", firstName=" + firstName + ", lastName=" + lastName + ", active=" + active + ", createdAt="
 				+ createdAt + ", roles=" + roles + ", followers=" + followers + ", following=" + following + "]";
+	}
+
+	public Map<Product, Integer> getCart() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	  
 	  
